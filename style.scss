@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(47, 36, 36);
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+}
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10%;
+
+
+    #head{
+        font-size: 25px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    #year{
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    #other{
+        display: flex;
+        box-sizing: border-box;
+        background-color: rgba(27, 21, 21, 0.6);
+        width: 100%;
+        justify-content: center;
+        .box{
+            padding: 20px;
+            text-align: center;
+        }
+
+
+        span{
+            display: block;
+        }
+    }
+
+    
+    
+    @media screen and (max-width: 480px) {
+        &{
+            gap: 10%;
+        }
+        #head{
+            font-size: 18px;
+        }
+        #year{
+            font-size: 25px;
+        }
+        #other{
+            flex-direction: column;
+            
+        }
+    }
+
+}
